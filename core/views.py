@@ -17,3 +17,13 @@ def home(request):
 # Mantenha o que já existe acima e adicione:
 def pagina_teste(request):
     return render(request, 'core/teste.html')
+
+
+# Mantenha o que já existe acima e adicione:
+def pagina_quiz(request):
+    return render(request, 'core/quiz.html')
+
+
+# Mantenha o que já existe acima e adicione:
+def login(request):
+    return render(request, 'core/login.html')

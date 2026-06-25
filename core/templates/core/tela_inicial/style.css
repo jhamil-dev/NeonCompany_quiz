@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+<!-- Aqui embaixo vou criar o botão escuro --->
+
+body.dark-mode {
+    background: #0f172a;
+    color: #fff;
+}
+
+body.dark-mode .subject-card {
+    background: #1e293b;
+    color: #fff;
+}
+
+body.dark-mode .subject-info p {
+    color: #cbd5e1; 
+}
+
+body.dark-mode .bottom-nav {
+    background: #1e293b;
+    border-top: 1px solid #334155; 
+}
+
+body.dark-mode .theme-btn {
+    background: #334155;
+
+}
+
+<!-- Certo, esses são os comandos de modo escuro --->
+
+body{
+    background:#f8fafc;
+    color:#111827;
+}
+
+.container{
+    padding:24px;
+    padding-bottom:120px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+
+.theme-btn{
+    border:none;
+    background:white;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.welcome h1{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.welcome p{
+    color:#6b7280;
+    font-size:18px;
+}
+
+.challenge-card{
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #5b8eff
+    );
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.challenge-card h2{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.title{
+    margin-top:35px;
+    margin-bottom:20px;
+}
+
+.subject-card{
+    background:white;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:16px;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.04);
+}
+
+.subject-icon{
+    width:60px;
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+}
+
+.subject-info{
+    flex:1;
+}
+
+.subject-info h3{
+    margin-bottom:5px;
+}
+
+.subject-info p{
+    color:#6b7280;
+}
+
+<!-- esquema ---> 
+.subject-link {
+    text-decoration: none;
+    color:inherit;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.arrow{
+    font-size:24px;
+    color:#9ca3af;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+
+    width:100%;
+    height:75px;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    border-top:1px solid #e5e7eb;
+}
+
+.bottom-nav button{
+    border:none;
+    background:none;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:5px;
+
+    cursor:pointer;
+}
+
+.bottom-nav span{
+    font-size:12px;
+}

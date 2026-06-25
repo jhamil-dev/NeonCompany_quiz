@@ -16,13 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include # <--- Adicionamos o 'include' aqui
-from core.views import home, pagina_teste
+from core.views import home, pagina_teste, pagina_quiz, login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')), # <--- Esta linha ativa o login/logout
     path('teste/', pagina_teste, name='url_teste'), # <--- Nova rota criada!
+    path('quiz/', pagina_quiz, name='quiz'), # <--- Nova rota criada!
     path('', home),
+    path('login/', login, name='login'), # <--- Nova rota criada! 
 
 
 ]
